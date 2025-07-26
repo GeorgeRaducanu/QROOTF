@@ -54,6 +54,13 @@ qrootf_complex_t mul_qrootf(qrootf_complex_t a, qrootf_complex_t b);
 qrootf_complex_t div_qrootf(qrootf_complex_t a, qrootf_complex_t b);
 
 /**
+ * Calculate the opposite of a complex number
+ * @param a Complex number
+ * @return Opposite of the complex number
+ */
+qrootf_complex_t opp_qrootf(qrootf_complex_t a);
+
+/**
  * Get the library version string
  * @return Version string in format "major.minor.patch"
  */
