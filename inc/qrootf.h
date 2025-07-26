@@ -13,10 +13,45 @@ typedef struct {
 
 /**
  * Calculate the roots of a polynomial equation
- * @param in input
- * @return QuadraticRoots structure containing the results
+ * @param n number of coefficients (n - 1 is the degree of the polynomial)
+ * @param in input array of coefficients in descending order of degree
+ *  e.g., for a[0]x^2 + a[1]x + a[2], in should be {a[0], a[1], a[2]}
+ * @return calculate_roots structure containing the results
  */
-void calculate_roots(double in);
+qrootf_complex_t* calculate_roots(int n, qrootf_complex_t* in);
+
+/**
+ * Addition of two complex numbers
+ * @param a First complex number
+ * @param b Second complex number
+ * @return Resulting complex number after addition
+ */
+qrootf_complex_t add_qrootf(qrootf_complex_t a, qrootf_complex_t b);
+
+
+/**
+ * Subtraction of two complex numbers
+ * @param a First complex number
+ * @param b Second complex number
+ * @return Resulting complex number after subtraction
+ */
+qrootf_complex_t sub_qrootf(qrootf_complex_t a, qrootf_complex_t b);
+
+/**
+ * Multiplication of two complex numbers
+ * @param a First complex number
+ * @param b Second complex number
+ * @return Resulting complex number after multiplication
+ */
+qrootf_complex_t mul_qrootf(qrootf_complex_t a, qrootf_complex_t b);
+
+/**
+ * Division of two complex numbers
+ * @param a First complex number
+ * @param b Second complex number
+ * @return Resulting complex number after division
+ */
+qrootf_complex_t div_qrootf(qrootf_complex_t a, qrootf_complex_t b);
 
 /**
  * Get the library version string

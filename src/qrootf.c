@@ -1,6 +1,9 @@
 #include "qrootf.h"
 
-void calculate_quadratic_roots(double in) {
+qrootf_complex_t* calculate_quadratic_roots(int n, qrootf_complex_t* in) {
+    // Implementation for calculating the roots
+    qrootf_complex_t* res;
+    return res;
 }
 
 const char* qrootf_get_version(void) {
