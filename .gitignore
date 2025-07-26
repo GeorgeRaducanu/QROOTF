@@ -56,3 +56,6 @@ dkms.conf
 
 # Build folders
 build*/
+
+# Vscode workspace files
+.vscode/

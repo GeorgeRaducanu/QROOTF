@@ -8,6 +8,8 @@ Quick Root Finder - a C library designed for the single purpose of quickly findi
 
 The library can compile on any major operating system, providing a standard, quick and reliable way accross operating systems to solve polynomial equtions.
 
+The idea is to use multiple algorithms inside the library (based on the degree of the polynomial) and to expose just a helpfull API that helps solve the problem quickly and efficiently.
+
 ## Requirements && Build instructions:
 
 In order to build the project the following are needed:
