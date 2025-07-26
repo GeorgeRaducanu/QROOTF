@@ -1,0 +1,41 @@
+#include <winver.h>
+#include "version.h"
+
+// Convert version components to comma-separated format for FILEVERSION
+#define VER_FILEVERSION QROOTF_VERSION_MAJOR,QROOTF_VERSION_MINOR,QROOTF_VERSION_PATCH,0
+#define VER_FILEVERSION_STR QROOTF_VERSION_STRING ".0"
+
+#define VER_PRODUCTVERSION VER_FILEVERSION
+#define VER_PRODUCTVERSION_STR VER_FILEVERSION_STR
+
+#define VER_FILEDESCRIPTION_STR "QROOTF Quick Root Finder"
+#define VER_INTERNALNAME_STR "qrootf"
+#define VER_ORIGINALFILENAME_STR "qrootf.exe"
+#define VER_PRODUCTNAME_STR "QROOTF Quick Root Finder"
+
+VS_VERSION_INFO VERSIONINFO
+FILEVERSION     VER_FILEVERSION
+PRODUCTVERSION  VER_PRODUCTVERSION
+FILEFLAGSMASK   VS_FFI_FILEFLAGSMASK
+FILEFLAGS       0
+FILEOS          VOS__WINDOWS32
+FILETYPE        VFT_APP
+FILESUBTYPE     VFT2_UNKNOWN
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904E4"  // Language: US English, Charset: Windows Multilingual
+        BEGIN
+            VALUE "FileDescription",  VER_FILEDESCRIPTION_STR
+            VALUE "FileVersion",      VER_FILEVERSION_STR
+            VALUE "InternalName",     VER_INTERNALNAME_STR
+            VALUE "OriginalFilename", VER_ORIGINALFILENAME_STR
+            VALUE "ProductName",      VER_PRODUCTNAME_STR
+            VALUE "ProductVersion",   VER_PRODUCTVERSION_STR
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252  // US English, Windows Multilingual
+    END
+END
