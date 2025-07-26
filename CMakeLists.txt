@@ -13,8 +13,13 @@ endfunction()
 # Extract version from header
 extract_version_from_header(${CMAKE_CURRENT_SOURCE_DIR}/inc/version.h)
 
+# Fallback if version extraction failed
+if(NOT QROOTF_VERSION)
+    set(QROOTF_VERSION "0.0.1")
+endif()
+
 # Extract major version for SOVERSION
-string(REGEX MATCH "^([0-9]+)" _ ${QROOTF_VERSION})
+string(REGEX MATCH "^([0-9]+)" QROOTF_VERSION_MAJOR_MATCH "${QROOTF_VERSION}")
 set(QROOTF_VERSION_MAJOR ${CMAKE_MATCH_1})
 
 project(qrootf VERSION ${QROOTF_VERSION} LANGUAGES C)
@@ -46,7 +51,7 @@ target_include_directories(qrootf_static PUBLIC inc)
 set_target_properties(qrootf_static PROPERTIES
     VERSION ${QROOTF_VERSION}
     SOVERSION ${QROOTF_VERSION_MAJOR}
-    OUTPUT_NAME qrootf
+    OUTPUT_NAME qrootf_static
 )
 
 # Dynamic library
@@ -74,6 +79,4 @@ target_include_directories(qrootf_exe PUBLIC inc)
 target_link_libraries(qrootf_exe qrootf_static)
 set_target_properties(qrootf_exe PROPERTIES
     OUTPUT_NAME qrootf
-    VERSION ${QROOTF_VERSION}
-    DESCRIPTION "${QROOTF_DESCRIPTION}"
 )
