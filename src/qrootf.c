@@ -64,6 +64,7 @@ qrootf_complex_t eval_poly_qrootf(const qrootf_complex_t* poly, int degree, qroo
     result.re = 0.0;
     result.im = 0.0;
     // TO DO: Implement polynomial evaluation
+    // test
     return result;
 }
 
