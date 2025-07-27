@@ -51,6 +51,14 @@ inline qrootf_complex_t opp_qrootf(qrootf_complex_t a) {
     return result;
 }
 
+qrootf_complex_t* derivative_poly_qrootf(const qrootf_complex_t* poly, int degree) {
+    if (degree <= 0) return NULL;
+
+    qrootf_complex_t* derivative = NULL;
+
+    return derivative;
+}
+
 const char* qrootf_get_version(void) {
     return QROOTF_VERSION_STRING;
 }
