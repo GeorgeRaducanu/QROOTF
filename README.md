@@ -13,7 +13,7 @@ The idea is to use multiple algorithms inside the library (based on the degree o
 ## Requirements && Build instructions:
 
 In order to build the project the following are needed:
-* C compiler (C99 standard)
+* C compiler (C99 standard) - the C standard is as old as possible in order to support many platforms
 * cmake
 * build system of choice (Make, Ninja, Visual Studio)
 
