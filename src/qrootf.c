@@ -3,7 +3,7 @@
 
 qrootf_complex_t* calculate_roots(int n, qrootf_complex_t* in) {
     // Implementation for calculating the roots
-    qrootf_complex_t* res;
+    qrootf_complex_t* res = NULL;
     return res;
 }
 
