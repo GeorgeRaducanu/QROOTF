@@ -81,3 +81,6 @@ target_link_libraries(qrootf_exe qrootf_static)
 set_target_properties(qrootf_exe PROPERTIES
     OUTPUT_NAME qrootf
 )
+
+enable_testing()
+add_subdirectory(tests)
