@@ -59,6 +59,14 @@ qrootf_complex_t* derivative_poly_qrootf(const qrootf_complex_t* poly, int degre
     return derivative;
 }
 
+qrootf_complex_t eval_poly_qrootf(const qrootf_complex_t* poly, int degree, qrootf_complex_t x) {
+    qrootf_complex_t result;
+    result.re = 0.0;
+    result.im = 0.0;
+    // TO DO: Implement polynomial evaluation
+    return result;
+}
+
 const char* qrootf_get_version(void) {
     return QROOTF_VERSION_STRING;
 }

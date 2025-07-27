@@ -7,6 +7,7 @@
 
 ## 0.2.0
 [+] Added basic implementation for operations with defined complex numbers
+[+] Added cmake single workflow and evaluation + derivative of polynomial function
 
 ## 0.1.0
 
