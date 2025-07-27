@@ -3,6 +3,8 @@
 
 #include "version.h"
 
+#define QROOTF_EPSILON 1e-10
+
 /**
  * Structure to hold the complex number representation
  */
