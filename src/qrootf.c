@@ -1,4 +1,5 @@
 #include "qrootf.h"
+#include <stdlib.h>
 
 qrootf_complex_t* calculate_roots(int n, qrootf_complex_t* in) {
     // Implementation for calculating the roots
@@ -52,4 +53,12 @@ inline qrootf_complex_t opp_qrootf(qrootf_complex_t a) {
 
 const char* qrootf_get_version(void) {
     return QROOTF_VERSION_STRING;
+}
+
+qrootf_complex_t* allocate_qrootf_complex_t_vector(int size) {
+    return (qrootf_complex_t*)malloc(size * sizeof(qrootf_complex_t));
+}
+
+void free_qrootf_complex_t_vector(qrootf_complex_t* vec) {
+    free(vec);
 }

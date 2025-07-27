@@ -2,7 +2,7 @@
 #define VERSION_H
 
 #define QROOTF_VERSION_MAJOR 0
-#define QROOTF_VERSION_MINOR 1
+#define QROOTF_VERSION_MINOR 2
 #define QROOTF_VERSION_PATCH 0
 
 // Helper macros to create version string from components

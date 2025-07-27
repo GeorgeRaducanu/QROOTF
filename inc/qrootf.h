@@ -14,6 +14,20 @@ typedef struct {
 } qrootf_complex_t;
 
 /**
+ * Allocate memory for a complex vector of given size
+ * @param size Number of complex numbers to allocate
+ * @return Pointer to the allocated complex vector
+ */
+qrootf_complex_t* allocate_qrootf_complex_t_vector(int size);
+
+/**
+ * Free the allocated memory for a complex vector
+ * @param vec Pointer to the complex vector
+ */
+void free_qrootf_complex_t_vector(qrootf_complex_t* vec);
+
+
+/**
  * Calculate the roots of a polynomial equation
  * @param n number of coefficients (n - 1 is the degree of the polynomial)
  * @param in input array of coefficients in descending order of degree
