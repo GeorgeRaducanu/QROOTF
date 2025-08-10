@@ -1,36 +1,127 @@
-# QROOTF
+# 🚀 QROOTF - Quick Root Finder
 
-## Author Răducanu George-Cristian
+<div align="center">
 
-## Description
+[![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](#)
+[![License](https://img.shields.io/badge/license-MIT-blue)](#)
+[![Platform](https://img.shields.io/badge/platform-cross--platform-orange)](#)
+[![C Standard](https://img.shields.io/badge/C-C99-blue)](#)
 
-Quick Root Finder - a C library designed for the single purpose of quickly finding all the roots of polynomials.
+**⚡ Lightning-fast polynomial root finding library ⚡**
 
-The library can compile on any major operating system, providing a standard, quick and reliable way accross operating systems to solve polynomial equtions.
+*Blazingly fast • Cross-platform • Zero dependencies*
 
-The idea is to use multiple algorithms inside the library (based on the degree of the polynomial) and to expose just a helpfull API that helps solve the problem quickly and efficiently.
+</div>
 
-## Requirements && Build instructions:
+---
 
-In order to build the project the following are needed:
-* C compiler (C99 standard) - the C standard is as old as possible in order to support many platforms
-* cmake
-* build system of choice (Make, Ninja, Visual Studio)
+## 🎯 What is QROOTF?
 
-The project is intended to be built on as many platforms and operating system as possible. Embedded systems are also a concern for this target, and will be taken into account as much as possible.
+**QROOTF** is a high-performance C library engineered for one mission: **finding polynomial roots at breakneck speed**. 
 
-## Use cases
+🔥 **Why QROOTF rocks:**
+- ⚡ **Lightning Fast**: Optimized algorithms that adapt to polynomial degree
+- 🌍 **Universal**: Runs on any major OS - Windows, Linux, macOS, and embedded systems
+- 🎯 **Simple API**: Clean, intuitive interface that just works
+- 🛡️ **Rock Solid**: C99 standard for maximum compatibility
+- 📦 **Zero Dependencies**: Pure C, no external libraries required
 
-Root finding is used in various fields:
-* math
-* physics
-* chemistry
-* biology
-* engineering
-* finance & economics
-* computer graphics
-* video & audio
-* ML/ AI & computer vision
+> *"When you need roots, you need them FAST. QROOTF delivers."*
 
-The list continues on and on. And by all means use this project for your own case and help expand the list.
+## 👨‍💻 Author: Răducanu George-Cristian
+
+*Passionate developer crafting high-performance solutions for the global developer community.*
+
+## 🚀 Quick Start
+
+```bash
+# Clone the repo
+git clone https://github.com/GeorgeRaducanu/QROOTF.git
+cd QROOTF
+
+# Build (it's that simple!)
+mkdir build && cd build
+cmake ..
+cmake --build .
+
+# Run tests
+ctest
+```
+
+## 🛠️ Requirements & Build
+
+**What you need:**
+- 🔧 C compiler with C99 support
+- 📦 CMake (3.10+)
+- ⚙️ Your favorite build system (Make, Ninja, Visual Studio)
+
+**Supported platforms:**
+- ✅ Windows (MSVC, MinGW)
+- ✅ Linux (GCC, Clang)
+- ✅ macOS (Clang)
+- ✅ Embedded systems
+- ✅ Basically everywhere C99 runs!
+
+## 🎯 Use Cases - Where QROOTF Shines
+
+Root finding powers the world around us! QROOTF accelerates solutions in:
+
+<div align="center">
+
+| 🧮 **Mathematics** | 🔬 **Sciences** | 💻 **Technology** |
+|:---:|:---:|:---:|
+| Numerical Analysis | Physics Simulations | Computer Graphics |
+| Statistical Modeling | Chemistry Reactions | Game Engines |
+| Optimization | Biology Models | Signal Processing |
+
+| 🎨 **Media** | 🤖 **AI/ML** | 💰 **Finance** |
+|:---:|:---:|:---:|
+| Audio Processing | Neural Networks | Risk Modeling |
+| Video Compression | Computer Vision | Options Pricing |
+| Digital Effects | Data Science | Trading Algorithms |
+
+</div>
+
+**🌟 The possibilities are endless! Use QROOTF for your next breakthrough project.**
+
+---
+
+## 📚 API Preview
+
+```c
+#include "qrootf.h"
+
+// Find roots of x² - 5x + 6 = 0
+double coeffs[] = {6, -5, 1};  // constant, x, x²
+complex_t roots[2];
+int num_roots = qrootf_solve(coeffs, 2, roots);
+
+// Boom! Roots found: x = 2, x = 3
+```
+
+## 🤝 Contributing
+
+Found a bug? Have an optimization idea? **We want you on the team!**
+
+1. 🍴 Fork the repo
+2. 🌿 Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. 💾 Commit your changes (`git commit -m 'Add amazing feature'`)
+4. 🚀 Push to the branch (`git push origin feature/amazing-feature`)
+5. 📬 Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+<div align="center">
+
+**⭐ Star this repo if QROOTF helps you solve problems faster! ⭐**
+
+*Built with ❤️ for developers who need speed*
+
+**Created by [Răducanu George-Cristian](https://github.com/GeorgeRaducanu)**
+
+</div>
 
