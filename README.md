@@ -3,7 +3,7 @@
 <div align="center">
 
 [![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](#)
-[![License](https://img.shields.io/badge/license-MIT-blue)](#)
+[![License](https://img.shields.io/badge/license-Apache%202.0-blue)](#)
 [![Platform](https://img.shields.io/badge/platform-cross--platform-orange)](#)
 [![C Standard](https://img.shields.io/badge/C-C99-blue)](#)
 
@@ -111,7 +111,7 @@ Found a bug? Have an optimization idea? **We want you on the team!**
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
 
 ---
 
